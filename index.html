@@ -1,7 +1,208 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages. This is a test.</p>
+  <head>
+    <title>Dynamic Rhythm</title>
+    <!-- <link rel="icon" type="image/x-icon" href="sampleLogo.ico"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+
+      body {
+        background-color: #d9c9f8;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      .div1{
+        text-align: center;
+      }
+      .div2{
+        padding: 70px;
+        background-color: #6e538a;
+        text-align: center;
+      }
+      
+      .col {
+        float: left;
+        width: 33%;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: #6e538a;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 5;
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: #8009ff;
+        color: black;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .teambutton {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: #3C75BE;
+        background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+        box-shadow:
+          inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+          inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      }
+      
+      .teambutton:hover {
+        background-color: #509cff;
+      }
+      
+      .teambutton:active {
+        box-shadow:
+          inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+          inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+      }
+      
+    </style>
+  </head>
+  <body style="margin-top: 49px;" id="home">
+    <div class="topnav" style=" background-color: #0c2b53;">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#team">Our Team</a>
+    </div>
+
+    <!-- <div>
+      <video autoplay muted loop id="sampleVideo" width="100%">
+        <source src="sampleVideo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div> -->
+    <div class="div2" id="about" style="color: #EDF2F6;">
+      <h2 style="font-size: 35px">Project Overview</h2>
+      <p style="font-size: 120%; line-height: 200%">Have you ever listened to a song and wished you could play that particular song 
+        in a rhythm game? Or maybe even wanted more of your own songs in a rhythm game without having to wait for a new DLC pack to be released?
+        <br><br>
+        Well, our dynamic rhythm game will create procedurally generated ‘rhythm game levels’ (also known as ‘maps’) 
+        as songs are selected. We plan on achieving this by utilizing AI to detect various beats and inflections within the 
+        music. The music will be sourced from the largest music library in the world, Spotify, giving us access to over 100 
+        million songs and near-endless possibilities. </p>
+    </div>
+    <div class="div1" id="team">
+      <div class="row">
+        <div class="col">
+          <img src="././images/blank-profile.jpg" alt="sample portrait image" width="80%">
+          <h2>Katlin Scott</h2>
+          <h3>Team Leader</h3>
+          <p>"This is a brief bio, showcasing accomplishments and background. It provides a glimpse into the 
+            person's expertise, experience, and passion, demonstrating their value in their chosen field."</p>
+          <h3>Katlin.Scott1@gmail.com</h3>
+        </div>
+        <div class="col">
+          <img src="././images/blank-profile.jpg" alt="sample portrait image" width="80%">
+          <h2>Bethany Cadman</h2>
+          <h3>Team Member</h3>
+          <p>"This is a brief bio, showcasing accomplishments and background. It provides a glimpse into the 
+            person's expertise, experience, and passion, demonstrating their value in their chosen field."</p>
+          <h3>bethusa01@gmail.com</h3>
+        </div>
+        
+        <div class="col">
+          <img src="././images/blank-profile.jpg" alt="sample portrait image" width="80%">
+          <h2>Angel Magallanes</h2>
+          <h3>Team Member</h3>
+          <p>"This is a brief bio, showcasing accomplishments and background. It provides a glimpse into the 
+            person's expertise, experience, and passion, demonstrating their value in their chosen field."</p>
+          <h3>angelurm2012@gmail.com </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="././images/blank-profile.jpg" alt="sample portrait image" width="80%">
+          <h2>Willie Doyle</h2>
+          <h3>Team Member</h3>
+          <p>"This is a brief bio, showcasing accomplishments and background. It provides a glimpse into the 
+            person's expertise, experience, and passion, demonstrating their value in their chosen field."</p>
+          <h3>www.willdoyle10@gmail.com</h3>
+        </div>
+        <div class="col">
+          <img src="././images/blank-profile.jpg" alt="sample portrait image" width="80%">
+          <h2>Sarah North</h2>
+          <h3>Project Supervisor</h3>
+          <p>"This is a brief bio, showcasing accomplishments and background. It provides a glimpse into the 
+            person's expertise, experience, and passion, demonstrating their value in their chosen field."</p>
+          <h3>snorth@kennesaw.edu</h3>
+        </div>
+      </div>
+      <button class="teambutton" type="button" onclick="window.location.href='fullTeam.html';">More</button>
+    </div>
+    <div class="div1" style="background-color: #36394E; color: #EDF2F6; padding: 70px;">
+      <p>
+        <span>
+          This is a footer tab that may or may not be used.
+        </span>
+      </p>
+    </div>
   </body>
 </html>
