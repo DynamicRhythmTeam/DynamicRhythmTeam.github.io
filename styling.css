@@ -1,0 +1,147 @@
+body {
+    background-color: #d9c9f8;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .div1 {
+    text-align: center;
+  }
+
+  .div2 {
+    padding: 70px;
+    background-color: #6e538a;
+    text-align: center;
+  }
+  
+  .col {
+    float: left;
+    width: 33%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col2 {
+    float: left;
+    width: 50%;
+  }
+
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #6e538a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #d1a5ff;
+    color: black;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .teambutton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #3C75BE;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .teambutton:hover {
+    background-color: #509cff;
+  }
+  
+  .teambutton:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .drt {
+    text-align: center;
+    font-family: "Bagel Fat One", "Audiowide", "Montserrat", "Courier New", monospace;
+  }
+
+  .about {
+    text-align: center;
+    font-family: "Bagel Fat One", "Audiowide", "Montserrat", "Courier New", monospace;
+  }
+
+  li {
+    font-family: Arial;
+    font-size: 18px;
+  }
+
+  
